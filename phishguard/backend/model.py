@@ -186,24 +186,24 @@ def predict_url(url):
     # Score range typically -50 to +150
     
     if phishing_score <= 10:
-        label = "Safe"
+        label = "safe"
         confidence = max(50, 100 - (phishing_score + 50))
         if confidence > 98:
             confidence = 98
     elif phishing_score <= 45:
-        label = "Suspicious"
+        label = "suspicious"
         confidence = 50 + (phishing_score - 10) // 1
     else:
-        label = "Phishing"
+        label = "phishing"
         confidence = min(98, 50 + (phishing_score - 45) // 1)
     
-    confidence = round(confidence, 1)
+    confidence = round(confidence / 100, 2)
     
     # Clean up reasons for display
-    if label == "Safe":
+    if label == "safe":
         if not reasons or all("✅" in r for r in reasons):
             reasons.append("✅ URL appears legitimate")
-    elif label == "Phishing":
+    elif label == "phishing":
         reasons.insert(0, "🚨 DANGEROUS: This link is likely a phishing attempt!")
     
     # Keep only top 4 reasons for display
