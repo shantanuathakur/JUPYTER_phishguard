@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishGuard | Secure URL Detection</title>
+    <meta name="description" content="AI-powered phishing detection and URL safety analysis.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-blobs">
+        <div class="blob"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <span>🛡️ PhishGuard</span>
+        </div>
+        <div class="nav-links">
+            <button class="active" data-target="checker">URL Checker</button>
+            <button data-target="scanner">Email Scanner</button>
+            <button data-target="history">My History</button>
+            <button data-target="blocked">Blocked Links</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Section: URL Checker -->
+        <section id="checker" class="section active">
+            <div class="card">
+                <h2>Analyze URL</h2>
+                <p style="margin-bottom: 20px; color: var(--text-muted);">Enter a suspicious link to verify its safety using our AI model.</p>
+                <div class="input-group">
+                    <input type="text" id="url-input" placeholder="https://example.com/login" autocomplete="off">
+                    <button id="btn-check" class="primary">
+                        <span class="flex">Analyze <div class="loader" id="check-loader"></div></span>
+                    </button>
+                </div>
+                <div id="single-result"></div>
+            </div>
+        </section>
+
+        <!-- Section: Email Scanner -->
+        <section id="scanner" class="section">
+            <div class="card">
+                <h2>Bulk Email Scanner</h2>
+                <p style="margin-bottom: 20px; color: var(--text-muted);">Paste the raw contents of an email. We will extract all URLs and scan them for threats.</p>
+                <textarea id="email-input" placeholder="Paste your email text here..."></textarea>
+                <div style="margin-top: 15px;">
+                    <button id="btn-scan" class="primary">
+                        <span class="flex">Scan Email <div class="loader" id="scan-loader"></div></span>
+                    </button>
+                </div>
+                <div id="batch-results"></div>
+            </div>
+        </section>
+
+        <!-- Section: History -->
+        <section id="history" class="section">
+            <div class="card">
+                <div class="history-header">
+                    <h2>Recent History</h2>
+                    <button id="btn-clear-history" class="primary outline danger small">Clear History</button>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>URL</th>
+                            <th>Status</th>
+                            <th>Confidence</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamic rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section: Blocked Links -->
+        <section id="blocked" class="section">
+            <div class="card">
+                <h2>Permanently Blocked Links</h2>
+                <p style="margin-bottom: 20px; color: var(--text-muted);">URLs listed here are categorized as harmful by the user.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>URL</th>
+                            <th>Blocked On</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="blocked-table">
+                        <!-- Dynamic rows -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
