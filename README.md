@@ -106,3 +106,9 @@ JUPYTER_phishguard/
 │   ├── background.js    # API calls
 │   └── popup.html       # Extension popup
 └── README.md
+ Team
+Name	Role
+Shantanu thakur	Backend + ML Lead
+[Rishabh upadhyay]	Frontend + UI
+[Akansha Barai]	Chrome Extension + PPT
+[Priyanka sharma]	Integration + Testing
