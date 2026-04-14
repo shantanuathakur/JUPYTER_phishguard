@@ -1,3 +1,5 @@
+<img width="1222" height="840" alt="Screenshot 2026-04-14 173306" src="https://github.com/user-attachments/assets/788f13a5-c54a-4bac-8368-c2f6c42070a3" />
+<img width="535" height="284" alt="Screenshot 2026-04-14 173341" src="https://github.com/user-attachments/assets/ef63227a-66a9-4278-919c-0b2ba1cdce7b" />
 # JUPYTER_phishguard
 # 🛡️ PhishGuard - AI-Powered Phishing Link Detector
 
@@ -112,3 +114,8 @@ Shantanu thakur	Backend + ML Lead
 [Rishabh upadhyay]	Frontend + UI
 [Akansha Barai]	Chrome Extension + PPT
 [Priyanka sharma]	Integration + Testing
+<img width="1919" height="933" alt="Screenshot 2026-04-14 011828" src="https://github.com/user-attachments/assets/fb13a7b5-a22f-4381-a959-b163a5cd56d7" />
+<img width="1917" height="938" alt="Screenshot 2026-04-14 011816" src="https://github.com/user-attachments/assets/88f84fa8-c175-46b1-806b-0a10483c6dfc" />
+<img width="1916" height="928" alt="Screenshot 2026-04-14 011759" src="https://github.com/user-attachments/assets/73f515dd-cc4b-448f-8bc8-73590b681145" />
+<img width="535" height="284" alt="Screenshot 2026-04-14 173341" src="https://github.com/user-attachments/assets/bef6351f-8758-46e2-96ef-0ca798daf61d" />
+<img width="1222" height="840" alt="Screenshot 2026-04-14 173306" src="https://github.com/user-attachments/assets/37381688-2a2a-45f5-8d25-4000cad3b7a5" />
